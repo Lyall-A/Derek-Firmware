@@ -1,0 +1,19 @@
+Configuration.h:
+    Custom author (sorry MRiscoC whoever you are)
+    Custom hotend PID (36.87, 4.05, 84.06)
+    Custom bed PID (241.26, 47.12, 823.5)
+    Custom steps (80, 80, 400, 100)
+    Custom max acceleration (500, 500, 100, 5000)
+    Custom default acceleration (500, 1000, 500)
+    Custom probe offset (-40, -7, -1.69)
+    Enable leveling after home
+    Custom preheat options
+
+Configuration_adv.h:
+    Disabled buzzer by default
+
+Version.h:
+    Custom short build version
+    Custom detailed build version
+    Custom machine name
+    Custom source code URL
