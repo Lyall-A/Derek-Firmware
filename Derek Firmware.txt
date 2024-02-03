@@ -17,3 +17,6 @@ Version.h:
     Custom detailed build version
     Custom machine name
     Custom source code URL
+
+Additional:
+    Custom ready message
