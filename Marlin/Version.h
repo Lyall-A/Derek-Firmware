@@ -27,8 +27,12 @@
 
 /**
  * Marlin release version identifier
+ * 
+ * ---VERSION HISTORY---
+ * V1: Custom info and disabled buzzer by default
+ * V2: Set all preferred custom settings as default (TODO)
  */
-#define SHORT_BUILD_VERSION "2.1.3 MRiscoC"
+#define SHORT_BUILD_VERSION "Derek Firmware V1" // MODIFIED BY LYALL
 
 /**
  * Verbose version identifier which should contain a reference to the location
@@ -37,7 +41,7 @@
 #if ENABLED(IS_DEMO)
   #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION " DEMO, NOT FOR PRODUCTION"
 #else
-  #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION " Ender3V2-422-MM, based on bugfix-2.1.x"
+  #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION ", based on MRiscoC's Professional Firmware" // MODIFIED BY LYALL
 #endif
 
 /**
@@ -53,7 +57,7 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-#define MACHINE_NAME "Ender 3V2"
+#define MACHINE_NAME "Derek the Ender-3 V2" // MODIFIED BY LYALL
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
@@ -61,7 +65,7 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-#define SOURCE_CODE_URL "github.com/mriscoc/Ender3V2S1"
+#define SOURCE_CODE_URL "github.com/Lyall-A/Derek-Firmware" // MODIFIED BY LYALL
 
 /**
  * Default generic printer UUID.
@@ -72,7 +76,7 @@
  * The WEBSITE_URL is the location where users can get more information such as
  * documentation about a specific Marlin release.
  */
-#define WEBSITE_URL "github.com/mriscoc/Ender3V2S1/wiki"
+#define WEBSITE_URL "github.com/Lyall-A/Derek-Firmware" // MODIFIED BY LYALL
 
 /**
  * Set the vendor info the serial USB interface, if changable
