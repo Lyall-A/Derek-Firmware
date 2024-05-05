@@ -30,7 +30,7 @@
  * 
  * ---VERSION HISTORY---
  * V1: Custom info and disabled buzzer by default
- * V2: Z offset, E steps and enable leveling after G28
+ * V2: Z offset, E steps, PID and enable leveling after G28
  */
 #define SHORT_BUILD_VERSION "Derek Firmware V2" // MODIFIED BY LYALL
 
