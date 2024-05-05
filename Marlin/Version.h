@@ -30,7 +30,7 @@
  * 
  * ---VERSION HISTORY---
  * V1: Custom info and disabled buzzer by default
- * V2: Set all preferred custom settings as default (TODO)
+ * V2: Z offset
  */
 #define SHORT_BUILD_VERSION "Derek Firmware V1" // MODIFIED BY LYALL
 
