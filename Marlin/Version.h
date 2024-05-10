@@ -31,8 +31,9 @@
  * ---VERSION HISTORY---
  * V1: Custom info and disabled buzzer by default
  * V2: Z offset, E steps, PID and enable leveling after G28
+ * V3: Change preheat configs (useless)
  */
-#define SHORT_BUILD_VERSION "Derek Firmware V2" // MODIFIED BY LYALL
+#define SHORT_BUILD_VERSION "Derek Firmware V3" // MODIFIED BY LYALL
 
 /**
  * Verbose version identifier which should contain a reference to the location
