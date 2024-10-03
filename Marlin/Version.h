@@ -33,7 +33,7 @@
  * V2: Z offset, E steps, PID and enable leveling after G28
  * V3: Change preheat configs (useless)
  */
-#define SHORT_BUILD_VERSION "Derek Firmware V3" // MODIFIED BY LYALL
+#define SHORT_BUILD_VERSION "Derek Firmware V3" // CHANGED FOR DEREK FIRMWARE
 
 /**
  * Verbose version identifier which should contain a reference to the location
@@ -42,7 +42,7 @@
 #if ENABLED(IS_DEMO)
   #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION " DEMO, NOT FOR PRODUCTION"
 #else
-  #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION ", based on bugfix-2.1.x" // MODIFIED BY LYALL
+  #define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION ", based on bugfix-2.1.x" // CHANGED FOR DEREK FIRMWARE
 #endif
 
 /**
@@ -58,7 +58,7 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-#define MACHINE_NAME "Derek the Ender-3 V2" // MODIFIED BY LYALL
+#define MACHINE_NAME "Derek the Ender-3 V2" // CHANGED FOR DEREK FIRMWARE
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
@@ -66,7 +66,7 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-#define SOURCE_CODE_URL "github.com/Lyall-A/Derek-Firmware" // MODIFIED BY LYALL
+#define SOURCE_CODE_URL "github.com/Lyall-A/Derek-Firmware" // CHANGED FOR DEREK FIRMWARE
 
 /**
  * Default generic printer UUID.
@@ -77,7 +77,7 @@
  * The WEBSITE_URL is the location where users can get more information such as
  * documentation about a specific Marlin release.
  */
-#define WEBSITE_URL "github.com/Lyall-A/Derek-Firmware" // MODIFIED BY LYALL
+#define WEBSITE_URL "github.com/Lyall-A/Derek-Firmware" // CHANGED FOR DEREK FIRMWARE
 
 /**
  * Set the vendor info the serial USB interface, if changable

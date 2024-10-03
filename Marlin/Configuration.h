@@ -64,7 +64,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "Lyall" // Who made the changes. // MODIFIED BY LYALL
+#define STRING_CONFIG_H_AUTHOR "Lyall" // Who made the changes. // CHANGED FOR DEREK FIRMWARE
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 // @section machine
@@ -120,7 +120,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Derek the Ender-3 V2" // MODIFIED BY LYALL
+#define CUSTOM_MACHINE_NAME "Derek the Ender-3 V2" // CHANGED FOR DEREK FIRMWARE
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -684,9 +684,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  36.87 // MODIFIED BY LYALL
-    #define DEFAULT_Ki   4.05 // MODIFIED BY LYALL
-    #define DEFAULT_Kd  84.06 // MODIFIED BY LYALL
+    #define DEFAULT_Kp  36.87 // CHANGED FOR DEREK FIRMWARE
+    #define DEFAULT_Ki   4.05 // CHANGED FOR DEREK FIRMWARE
+    #define DEFAULT_Kd  84.06 // CHANGED FOR DEREK FIRMWARE
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -774,9 +774,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 241.26 // MODIFIED BY LYALL
-  #define DEFAULT_bedKi  47.12 // MODIFIED BY LYALL
-  #define DEFAULT_bedKd 823.5 // MODIFIED BY LYALL
+  #define DEFAULT_bedKp 241.26 // CHANGED FOR DEREK FIRMWARE
+  #define DEFAULT_bedKi  47.12 // CHANGED FOR DEREK FIRMWARE
+  #define DEFAULT_bedKd 823.5 // CHANGED FOR DEREK FIRMWARE
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1238,7 +1238,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }  // Ender Configs // MODIFIED BY LYALL
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }  // Ender Configs // CHANGED FOR DEREK FIRMWARE
 
 #define LIMITED_MAX_STEPS_EDITING
 #if ENABLED(LIMITED_MAX_STEPS_EDITING)
@@ -1575,7 +1575,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -41.5, -7, -1.80 }  // MRiscoC BLTouch offset for support: https://www.thingiverse.com/thing:4605354 (z-offset = -1.80 mm) // MODIFIED BY LYALL
+#define NOZZLE_TO_PROBE_OFFSET { -41.5, -7, -1.80 }  // MRiscoC BLTouch offset for support: https://www.thingiverse.com/thing:4605354 (z-offset = -1.80 mm) // CHANGED FOR DEREK FIRMWARE
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -2051,7 +2051,7 @@
  * leveling immediately after G28.
  */
 //#define RESTORE_LEVELING_AFTER_G28
-#define ENABLE_LEVELING_AFTER_G28 // MODIFIED BY LYALL
+#define ENABLE_LEVELING_AFTER_G28 // CHANGED FOR DEREK FIRMWARE
 
 /**
  * Auto-leveling needs preheating
