@@ -32,8 +32,9 @@
  * V1: Custom info and disabled buzzer by default
  * V2: Z offset, E steps, PID and enable leveling after G28
  * V3: Change preheat configs (useless)
+ * V4: Merge upstream
  */
-#define SHORT_BUILD_VERSION "Derek Firmware V3" // CHANGED FOR DEREK FIRMWARE
+#define SHORT_BUILD_VERSION "Derek Firmware V4" // CHANGED FOR DEREK FIRMWARE
 
 /**
  * Verbose version identifier which should contain a reference to the location
