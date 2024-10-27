@@ -1218,7 +1218,7 @@ void hmiWaitForUser() {
       #define BOOTSCREEN_TIMEOUT 1100
     #endif
     DWINUI::drawBox(1, COLOR_BLACK, { 5, 220, DWIN_WIDTH - 5, DWINUI::fontHeight() });
-    DWINUI::drawCenteredString(COLOR_WHITE, 220, F("Professional Firmware "));
+    DWINUI::drawCenteredString(COLOR_WHITE, 220, F("Derek Firmware"));
     for (uint16_t t = 15; t <= 257; t += 11) {
       DWINUI::drawIcon(ICON_Bar, 15, 260);
       dwinDrawRectangle(1, hmiData.colorBackground, t, 260, 257, 280);

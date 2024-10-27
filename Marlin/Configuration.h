@@ -1280,8 +1280,8 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves  // Ender Configs
-#define DEFAULT_RETRACT_ACCELERATION  800    // E acceleration for retracts  // Ender Configs
+#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves  // Ender Configs
+#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts  // Ender Configs
 #define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves  // Ender Configs
 
 /**
@@ -3403,7 +3403,7 @@
 #define USE_STOCK_DWIN_SET
 
 // Professional firmware features:
-#define PROUI_EX 1
+// #define PROUI_EX 1 // CHANGED FOR DEREK FIRMWARE
 #if PROUI_EX
   #if ENABLED(FILAMENT_RUNOUT_SENSOR)
     #define HAS_PROUI_RUNOUT_SENSOR 1
