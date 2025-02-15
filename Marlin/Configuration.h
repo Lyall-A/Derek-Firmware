@@ -1575,7 +1575,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -41.5, -7, -1.80 }  // MRiscoC BLTouch offset for support: https://www.thingiverse.com/thing:4605354 (z-offset = -1.80 mm) // CHANGED FOR DEREK FIRMWARE
+#define NOZZLE_TO_PROBE_OFFSET { -41.5, -7, -1.90 }  // MRiscoC BLTouch offset for support: https://www.thingiverse.com/thing:4605354 (z-offset = -1.80 mm) // CHANGED FOR DEREK FIRMWARE
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0

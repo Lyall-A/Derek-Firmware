@@ -88,16 +88,16 @@ const configOptions = [
 const config = fs.readFileSync(path.resolve(__dirname, "derek.config"), "utf-8");
 
 for (const option of configOptions) {
-    const value = config.match(new RegExp(`${escapeRegExp(option.name)} ?= ?(.*)`))?.[1]; // Get config value
+    const value = config.match(new RegExp(`${escapeRegExp(option.name)}\\s*=\\s*(.*)`))?.[1]; // Get config value
     if (!value) continue; // Continue if no value
     const filePath = path.join(marlinPath, option.file); // Config file path
-    const [beforeString, afterString] = option.replace.split("@$");
+    const [beforeString = "", afterString = ""] = option.replace.split("@$");
     const replaceRegex = new RegExp(`^(${beforeString}).*(${afterString})`, "m"); // Make replace regex
 
     const file = fs.readFileSync(filePath, "utf-8"); // Read config file
     const beforeMatch = file.match(replaceRegex); // Check for line that matches regex BEFORE replacing
     if (!beforeMatch) {
-        console.log(`Couldn't find line that matches '${option.replace}' in config file '${option.file}'!`);
+        console.log(`Couldn't find line that matches '${option.replace}' in file '${option.file}'!`);
         continue;
     }
 
@@ -106,13 +106,12 @@ for (const option of configOptions) {
     const afterMatch = changedFile.match(replaceRegex); // Check for line that matches regex AFTER replacing
     if (!afterMatch) {
         console.log(`Couldn't match '${option.replace}' after replacing line!`);
-    } else {
-        console.log(afterMatch[0])
-        // continue;
-        fs.writeFileSync(`${filePath}.bak`, file);
-        fs.writeFileSync(filePath, changedFile);
-        console.log(`Replaced '${beforeMatch[0]}' to '${afterMatch[0]}' in config file '${option.file}'`);
+        continue;
     }
+
+    fs.writeFileSync(`${filePath}.bak`, file);
+    fs.writeFileSync(filePath, changedFile);
+    console.log(`Replaced '${beforeMatch[0]}' to '${afterMatch[0]}' in file '${option.file}'`);
 }
 
 function escapeRegExp(string) {
